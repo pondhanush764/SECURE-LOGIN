@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2>Welcome back, {{ username }}!</h2>
+<p style="text-align: center; color: #4b5563; margin-bottom: 2rem;">
+    You have securely authenticated into your dashboard profile.
+</p>
+<a href="{{ url_for('logout') }}">
+    <button type="button" style="background-color: var(--error);">Log Out</button>
+</a>
+{% endblock %}
